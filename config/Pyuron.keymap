@@ -121,7 +121,9 @@
         layer_2 {
             bindings = <
 &none        &kp JP_LT      &kp JP_EQUAL   &kp JP_RT  &none                                        &none          &kp JP_PLUS     &none        &kp JP_SLASH  &mkp MB3
+
 &none        &kp JP_LPAR    &kp JP_AT      &kp JP_RPAR   &kp MINUS                                 &kp JP_QMARK   &kp ENTER  &kp DOUBLE_QUOTES &kp LS(0x87)  &kp LS(0x1e)
+
 &none        &kp JP_LBRC    &none          &kp JP_RBRC   &none          &kp EQUAL                  &trans          &kp DELETE          &none           &none         &none         &none
 &trans                      &trans                                             &trans        &trans                     &trans          &trans                                               &trans                &kp PIPE
             >;
@@ -129,9 +131,11 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END                    &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none        &kp HOME   &kp UP     &kp PAGE_UP      &none                                 &kp TAB          &kp N7          &kp N8        &kp N9         &mkp MB3
+
+&none        &kp LEFT   &kp DOWN   &kp RIGHT        &none                                 &kp BACKSPACE  &kp N4          &mt RGUI N5        &kp N6         &kp ENTER
+
+&none        &kp END    &none      &kp PAGE_DOWN    &none   &trans                &trans   &kp N0         &kp N1          &kp N2        &kp N3         &mt LCTRL PERIOD
 &trans          &trans                                                           &trans   &trans    &trans  &trans                  &trans  &trans
             >;
         };
